@@ -102,7 +102,7 @@ def main(config: argparse.Namespace, input_image: Image):
 
     model.eval()
 
-    print("processing...")
+    # print("processing...")
 
     transformed_image_PIL = data_transforms(input_image, config.input_size)
     input_image = transformed_image_PIL.convert("L")

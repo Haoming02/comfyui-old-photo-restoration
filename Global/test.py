@@ -107,7 +107,7 @@ def global_test(
     )
     mask_transform = transforms.ToTensor()
 
-    print("processing...")
+    # print("processing...")
 
     if opt.NL_use_mask:
         if opt.mask_dilation != 0:
