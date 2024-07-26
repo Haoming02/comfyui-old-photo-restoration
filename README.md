@@ -1,4 +1,4 @@
-﻿# SD Webui Old Photo Restoration
+﻿# ComfyUI Old Photo Restoration
 This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), which allows you to perform **Bringing-Old-Photos-Back-to-Life** natively.
 
 <p align="center">
