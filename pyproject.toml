@@ -2,7 +2,7 @@
 name = "comfyui-old-photo-restoration"
 description = "Perform Bringing-Old-Photos-Back-to-Life"
 version = "1.0.0"
-license = "MIT"
+license = { text = "MIT License" }
 dependencies = [
     "dlib-bin",
     "scikit-image",
