@@ -1,15 +1,26 @@
 [project]
 name = "comfyui-old-photo-restoration"
-description = "This is an Extension for ComfyUI, which allows you to perform Bringing-Old-Photos-Back-to-Life natively."
+description = "Perform Bringing-Old-Photos-Back-to-Life"
 version = "1.0.0"
-license = {file = "LICENSE"}
-dependencies = ["dlib-bin", "scikit-image", "easydict", "PyYAML", "dominate", "dill", "tensorboardX", "scipy", "opencv-python", "einops", "matplotlib"]
+license = "MIT"
+dependencies = [
+    "dlib-bin",
+    "scikit-image",
+    "easydict",
+    "PyYAML",
+    "dominate",
+    "dill",
+    "tensorboardX",
+    "scipy",
+    "opencv-python",
+    "einops",
+    "matplotlib",
+]
 
 [project.urls]
 Repository = "https://github.com/Haoming02/comfyui-old-photo-restoration"
-#  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
-DisplayName = "comfyui-old-photo-restoration"
+PublisherId = "haoming02"
+DisplayName = "Old Photo Restoration"
 Icon = ""
