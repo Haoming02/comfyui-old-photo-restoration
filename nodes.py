@@ -1,12 +1,12 @@
-from .Global.test import global_test
-from .Global.detection import global_detection
+from .lib_bopb2l.Global.test import global_test
+from .lib_bopb2l.Global.detection import global_detection
 
-from .Face_Detection.detect_all_dlib import detect
-from .Face_Detection.detect_all_dlib_HR import detect_hr
-from .Face_Detection.align_warp_back_multiple_dlib import align_warp
-from .Face_Detection.align_warp_back_multiple_dlib_HR import align_warp_hr
+from .lib_bopb2l.Face_Detection.detect_all_dlib import detect
+from .lib_bopb2l.Face_Detection.detect_all_dlib_HR import detect_hr
+from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib import align_warp
+from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib_HR import align_warp_hr
 
-from .Face_Enhancement.test_face import test_face
+from .lib_bopb2l.Face_Enhancement.test_face import test_face
 
 from .utils import (
     FACE_ENHANCEMENT_CHECKPOINTS,

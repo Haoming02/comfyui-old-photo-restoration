@@ -6,10 +6,17 @@ import os
 
 ext: str = Path(__file__).parent.resolve()
 
+GLOBAL_CHECKPOINTS_FOLDER = os.path.join(
+    ext, "lib_bopb2l", "Global", "checkpoints", "restoration"
+)
+FACE_CHECKPOINTS_FOLDER = os.path.join(
+    ext, "lib_bopb2l", "Face_Enhancement", "checkpoints"
+)
+DAT = os.path.join(
+    ext, "lib_bopb2l", "Face_Detection", "shape_predictor_68_face_landmarks.dat"
+)
+
 FACE_ENHANCEMENT_CHECKPOINTS = ("Setting_9_epoch_100", "FaceSR_512")
-GLOBAL_CHECKPOINTS_FOLDER = os.path.join(ext, "Global", "checkpoints", "restoration")
-FACE_CHECKPOINTS_FOLDER = os.path.join(ext, "Face_Enhancement", "checkpoints")
-DAT = os.path.join(ext, "Face_Detection", "shape_predictor_68_face_landmarks.dat")
 
 
 def check():

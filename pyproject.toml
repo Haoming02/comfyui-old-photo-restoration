@@ -1,19 +1,20 @@
 [project]
 name = "comfyui-old-photo-restoration"
 description = "Perform Bringing-Old-Photos-Back-to-Life"
-version = "1.0.1"
+version = "1.1.0"
 license = { text = "MIT License" }
 dependencies = [
-    "dlib-bin",
-    "scikit-image",
-    "easydict",
-    "dominate",
+    "PyYAML",
     "dill",
-    "tensorboardX",
-    "scipy",
-    "opencv-python",
+    "dlib-bin",
+    "dominate",
+    "easydict",
     "einops",
     "matplotlib",
+    "opencv-python",
+    "scikit-image",
+    "scipy",
+    "tensorboardX",
 ]
 
 [project.urls]

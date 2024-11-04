@@ -14,11 +14,11 @@ This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), w
 ## Requirements
 0. Install the packages in `requirement.txt`
 1. Download `global_checkpoints.zip` from [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases)
-2. Extract and put the `checkpoints` **folder** *(not just the files)* into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/Global`
+2. Extract and put the `checkpoints` **folder** *(not just the files)* into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/lib_bopb2l/Global`
 3. Download `face_checkpoints.zip` from [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases)
-4. Extract and put the `checkpoints` **folder** *(not just the files)* into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/Face_Enhancement`
+4. Extract and put the `checkpoints` **folder** *(not just the files)* into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/lib_bopb2l/Face_Enhancement`
 5. Download `shape_predictor_68_face_landmarks.zip` from [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases)
-6. Extract the `.dat` **file** into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/Face_Detection`
+6. Extract the `.dat` **file** into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/lib_bopb2l/Face_Detection`
 
 > The [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases) page includes the original links, as well as the backups mirrored by myself
 
@@ -31,4 +31,5 @@ To improve the faces, connect the `image` to the `Face Detection` node then the 
 
 #### Settings
 - **HR:** Use some higher parameters during the processings
-- **GPU_ID:** Specify the GPU to use. Set it to `-1` to use CPU, or if you don't have nVidia GPU.
+- **GPU_ID:** Specify the GPU to use
+    - Set it to `-1` to use CPU if you do not have a Nvidia GPU or are getting Out of Memory Error
