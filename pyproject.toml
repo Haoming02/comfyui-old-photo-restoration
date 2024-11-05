@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-old-photo-restoration"
 description = "Perform Bringing-Old-Photos-Back-to-Life"
-version = "1.1.0"
+version = "1.1.1"
 license = { text = "MIT License" }
 dependencies = [
     "PyYAML",
