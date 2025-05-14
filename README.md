@@ -11,8 +11,29 @@ This is an Extension for [ComfyUI](https://github.com/comfyanonymous/ComfyUI), w
 
 > Original Repo: https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life *(includes some example images)*
 
-## Requirements
-0. Install the packages in `requirement.txt`
+## Installation
+
+> Blame ComfyUI-Manager for dropping the support for submodule...
+
+1. Go to the `custom_nodes` folder
+```bash
+cd custom_nodes
+```
+2. Download this Node
+```
+git clone https://github.com/Haoming02/comfyui-old-photo-restoration
+```
+3. Pull the submodule
+```bash
+cd comfyui-old-photo-restoration
+git submodule update --init --recursive
+```
+4. Install the packages in `requirements.txt`
+    - Google how to do this properly via `venv` yourself
+    - I will not provide command so people can stop randomly copy and paste codes online to nuke their own installation
+
+## Prerequisite
+0. Install as instructed above
 1. Download `global_checkpoints.zip` from [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases)
 2. Extract and put the `checkpoints` **folder** *(not just the files)* into `~ComfyUI/custom_nodes/comfyui-old-photo-restoration/lib_bopb2l/Global`
 3. Download `face_checkpoints.zip` from [Releases](https://github.com/Haoming02/sd-webui-old-photo-restoration/releases)
