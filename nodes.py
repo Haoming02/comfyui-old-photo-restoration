@@ -1,23 +1,20 @@
-from .lib_bopb2l.Global.test import global_test
-from .lib_bopb2l.Global.detection import global_detection
-
-from .lib_bopb2l.Face_Detection.detect_all_dlib import detect
-from .lib_bopb2l.Face_Detection.detect_all_dlib_HR import detect_hr
-from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib import align_warp
-from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib_HR import align_warp_hr
-
-from .lib_bopb2l.Face_Enhancement.test_face import test_face
-
-from .utils import (
-    FACE_ENHANCEMENT_CHECKPOINTS,
-    GLOBAL_CHECKPOINTS_FOLDER,
-    FACE_CHECKPOINTS_FOLDER,
-    tensor2image,
-    image2tensor,
-)
-
 from PIL.Image import Image
 from torch import Tensor
+
+from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib import align_warp
+from .lib_bopb2l.Face_Detection.align_warp_back_multiple_dlib_HR import align_warp_hr
+from .lib_bopb2l.Face_Detection.detect_all_dlib import detect
+from .lib_bopb2l.Face_Detection.detect_all_dlib_HR import detect_hr
+from .lib_bopb2l.Face_Enhancement.test_face import test_face
+from .lib_bopb2l.Global.detection import global_detection
+from .lib_bopb2l.Global.test import global_test
+from .utils import (
+    FACE_CHECKPOINTS_FOLDER,
+    FACE_ENHANCEMENT_CHECKPOINTS,
+    GLOBAL_CHECKPOINTS_FOLDER,
+    image2tensor,
+    tensor2image,
+)
 
 
 class Stage1:
@@ -79,9 +76,7 @@ class Stage1S:
     def test(self, image: Tensor, hr: bool, gpu_id: str):
         input_image: Image = tensor2image(image)
 
-        mask, transformed_image = global_detection(
-            input_image, int(gpu_id), "full_size"
-        )
+        mask, transformed_image = global_detection(input_image, int(gpu_id), "full_size")
 
         args = [
             "--Scratch_and_Quality_restore",
